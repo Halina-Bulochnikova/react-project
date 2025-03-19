@@ -1,6 +1,7 @@
-import Product from "../components/Product.jsx";
+import Product from "./Product.jsx";
 
-export default function App() {
+
+export default function Eats() {
    return (
      <div>
        <h1>Best selling</h1>
@@ -18,3 +19,4 @@ export default function App() {
      </div>
    );
  }
+
