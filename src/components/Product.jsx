@@ -1,4 +1,5 @@
 import { HiCurrencyDollar } from "react-icons/hi";
+import Button from "./Button.jsx";
 
 
  function Product({ name, imgUrl, price }) {
@@ -7,7 +8,9 @@ import { HiCurrencyDollar } from "react-icons/hi";
         <h2 style={alertStyles}>{name}</h2>
       <img src={imgUrl} alt={name} width="480" />
       <p><HiCurrencyDollar className="my-icon" size={24} /> Price: {price} credits</p>
+
       </div>
+      
     );
   };
   const alertStyles = {
