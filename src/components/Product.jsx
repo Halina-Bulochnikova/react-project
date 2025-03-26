@@ -1,5 +1,5 @@
 import { HiCurrencyDollar } from "react-icons/hi";
-import Button from "./Button.jsx";
+
 
 
  function Product({ name, imgUrl, price }) {
