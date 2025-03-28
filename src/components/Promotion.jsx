@@ -1,2 +1,5 @@
-import { useState } from "react";
+const Promotion = () => {
 
+}
+
+export default Promotion;

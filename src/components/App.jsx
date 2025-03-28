@@ -1,33 +1,28 @@
-import Product from "./Product.jsx";
+import Product from "../components/Product.jsx";
 import Button from "../components/Button.jsx";
 import BookList from "../components/BookList.jsx";
 import State from "../components/State.jsx";
 import Promotion from "./Promotion.jsx";
-import s. from "../components/styles.css";
+import { useState } from "react";
 
 
  
-export default function App() {
-   return (
-     <div className={CSS.container}>
-       <h1>Best selling</h1> 
-       <State>
-       </State>
+const App = () => {
+  const[state, setState] = useState(() => {
+    return (
+      JSON.parse(localStorage.getItem("state")) ||
+      {
+      morning: 0,
+      noon: 0,
+      evening: 0,
+    }
+  );
+});
 
-       <Button></Button>
 
-       <Promotion></Promotion>  
 
-       <Product />
+}
 
-       <Product />  
-
-       <BookList></BookList>
-
-       <State></State>
-     </div>
-   )
-  };
- 
+  export default App;
 
  
